@@ -16,6 +16,14 @@
         android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/edtPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/user_pwd"
+        android:inputType="textPassword" />
+
+    <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,8 +35,8 @@
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contact number example: +6013456789"
         android:ems="10"
+        android:hint="Contact number example: +6013456789"
         android:inputType="phone" />
 
     <EditText
@@ -62,12 +70,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female" />
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button2"
+    <ImageView
+        android:id="@+id/imgProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_reg" />
 
 </LinearLayout>
